@@ -17,8 +17,7 @@ public class ScoreDatas : ScriptableObject
 
     public void InitScoreValue(int initValue)
     {
-        ScoreValue = Mathf.Clamp(initValue, 0, 9999);
-        UpdateScoreUI();
+        UpdateScoreValue(initValue);
     }
 
     private void UpdateScoreUI()
